@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: ms-controle-usuario
+              uri: http://localhost:9091
+              predicates:
+                - Path=/auth/**
+
+            - id: ms-escala
+              uri: http://localhost:9092
+              predicates:
+                - Path=/avaliador/**
+
+            - id: ms-sollux
+              uri: http://localhost:9093
+              predicates:
+                - Path=/planilha/**
+  mvc:
+    cors:
+      mappings:
+        "[/**]":
+          allowed-origin-patterns: "*"
+          allowed-methods: "*"
+          allowed-headers: "*"
+          allow-credentials: true
+          max-age: 3600
+
+
+
