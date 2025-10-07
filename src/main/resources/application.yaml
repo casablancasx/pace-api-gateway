@@ -18,6 +18,11 @@ spring:
               uri: http://localhost:9093
               predicates:
                 - Path=/planilha/**
+
+            - id: ms-pauta
+              uri: http://localhost:9094
+              predicates:
+                - Path=/advogado/**
   mvc:
     cors:
       mappings:
