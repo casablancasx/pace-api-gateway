@@ -29,6 +29,11 @@ spring:
               predicates:
                 - Path=/pautas/**
 
+            - id: ms-pauta
+              uri: http://localhost:9094
+              predicates:
+                - Path=/orgao-julgador/**
+
   mvc:
     cors:
       mappings:
