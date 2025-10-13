@@ -19,20 +19,14 @@ spring:
               predicates:
                 - Path=/planilha/**
 
-            - id: ms-advogado
-              uri: http://localhost:9094
-              predicates:
-                - Path=/advogado/**
-
             - id: ms-pauta
               uri: http://localhost:9094
               predicates:
-                - Path=/pautas/**
+                - Path=/advogado/**, /pauta/**, /orgao-julgador/**, /sala/**, /uf/**
 
-            - id: ms-pauta
-              uri: http://localhost:9094
-              predicates:
-                - Path=/orgao-julgador/**
+
+
+
 
   mvc:
     cors:
