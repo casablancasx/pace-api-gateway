@@ -22,7 +22,7 @@ spring:
             - id: ms-pauta
               uri: http://localhost:9094
               predicates:
-                - Path=/advogado/**, /pauta/**, /orgao-julgador/**, /sala/**, /uf/**
+                - Path=/advogado/**, /pauta/**, /orgao-julgador/**, /sala/**, /uf/**, /assunto/**
 
 
 
