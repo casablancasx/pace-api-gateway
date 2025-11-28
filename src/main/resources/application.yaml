@@ -5,22 +5,22 @@ spring:
         webmvc:
           routes:
             - id: ms-controle-usuario
-              uri: http://localhost:9091
+              uri: http://localhost:9094
               predicates:
                 - Path=/auth/**
 
             - id: ms-escala
-              uri: http://localhost:9092
+              uri: http://localhost:9093
               predicates:
                 - Path=/avaliador/**
 
             - id: ms-sollux
-              uri: http://localhost:9093
+              uri: http://localhost:9091
               predicates:
                 - Path=/planilha/**
 
             - id: ms-pauta
-              uri: http://localhost:9094
+              uri: http://localhost:9092
               predicates:
                 - Path=/advogado/**, /pauta/**, /orgao-julgador/**, /sala/**, /uf/**, /assunto/**, /audiencia/**
 
